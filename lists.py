@@ -33,11 +33,20 @@ def list_of_lists(list_of_lists_to_modify):
     nueva = []
 
     if len(list_of_lists_to_modify) > 0:
-        nueva.append(lista[0][:2])
+        nueva.append(list_of_lists_to_modify[0][:2])
+    else:
+        nueva.append([])
+
+    
     if len(list_of_lists_to_modify) > 1:
-        nueva.append(lista[1][1:4])
+        nueva.append(list_of_lists_to_modify[1][1:4])
+    else:
+        nueva.append([])
+
+
     if len(list_of_lists_to_modify) > 2:
-        nueva.append(lista[2][-2:])
+        nueva.append(list_of_lists_to_modify[2][-2:])
+    else:
+        nueva.append([])
 
     return nueva
-
